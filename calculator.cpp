@@ -44,3 +44,41 @@ int main() {
                     cout << "Masukkan angka kedua: ";
                     cin >> angka2;
                 }
+                
+ switch (pilihan) {
+                    case 1:
+                        hasil = angka1 + angka2;
+                        cout << "Hasil penjumlahan: " << hasil << endl;
+                        break;
+                    case 2:
+                        hasil = angka1 - angka2;
+                        cout << "Hasil pengurangan: " << hasil << endl;
+                        break;
+                    case 3:
+                        hasil = angka1 * angka2;
+                        cout << "Hasil perkalian: " << hasil << endl;
+                        break;
+                    case 4:
+                        if (angka2 != 0) {
+                            hasil = angka1 / angka2;
+                            cout << "Hasil pembagian: " << hasil << endl;
+                        } else {
+                            cout << "Error: Pembagian dengan nol tidak diperbolehkan." << endl;
+                        }
+                        break;
+                    case 5:
+                        hasil = pow(angka1, angka2); 
+                        cout << "Hasil pangkat: " << hasil << endl;
+                        break;
+                }
+            }
+        } else if (pilihan != 7) {
+            cout << "Pilihan tidak valid, coba lagi!" << endl;
+        }
+
+        cout << endl;
+    } while (pilihan != 7);
+
+    cout << "Terima kasih sudah menggunakan kalkulator ini!" << endl;
+    return 0;
+}
