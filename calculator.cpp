@@ -4,7 +4,7 @@ using namespace std;
 
 void tampilkanMenu() {
     cout << "============================" << endl;
-    cout << "      KALKULATOR CERIA      " << endl;
+    cout << "    KALKULATOR MATEMATIKA   " << endl;
     cout << "============================" << endl;
     cout << "1. Penjumlahan" << endl;
     cout << "2. Pengurangan" << endl;
